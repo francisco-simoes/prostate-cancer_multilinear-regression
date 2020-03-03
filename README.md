@@ -11,6 +11,7 @@ The univariate plots suggest a linear relationship between many of the predictor
 
 Unsurprisingly, a multilinear model (using all the predictors) fits the data well, improving the base error (of the model which simply predicts the average) by 50.5%.  
 ![](images/lcavol_prostate.png)
+(As explained in the IPYnotebook, the intercept is irrelevant in this graph: one must only observe the slope).
 
 However, some of the predictors turn out to be superfluous.
 Backwards selection tests the null-hypothesis using the Z-scores (which follow t-student distributions with 67-(p+1) d.o.f where p is the number of predictors) and provides a way to select the significant predictors.
